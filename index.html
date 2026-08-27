@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Beautiful Sister ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#100711;
+    color:#fff;
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+
+/* =========================================================
+   PREMIUM BACKGROUND
+========================================================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-10;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(154,24,79,.38),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(112,20,65,.25),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(183,62,72,.18),
+            transparent 30%
+        ),
+        #100711;
+}
+
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-9;
+    pointer-events:none;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        );
+
+    background-size:70px 70px;
+
+    mask-image:linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+}
+
+
+.glow{
+    position:fixed;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    filter:blur(150px);
+
+    opacity:.13;
+
+    background:#ffb83d;
+
+    z-index:-8;
+
+    pointer-events:none;
+
+    animation:glowMove 10s ease-in-out infinite alternate;
+}
+
+.glow1{
+    top:-180px;
+    left:-180px;
+}
+
+.glow2{
+    right:-180px;
+    bottom:-180px;
+
+    animation-delay:2s;
+}
+
+@keyframes glowMove{
+
+    from{
+        transform:translate(0,0) scale(1);
+    }
+
+    to{
+        transform:translate(100px,60px) scale(1.2);
+    }
+
+}
+
+
+/* =========================================================
+   MUSIC BUTTON
+========================================================= */
+
+.music{
+    position:fixed;
+
+    top:22px;
+    left:22px;
+
+    z-index:1000;
+
+    border:1px solid rgba(238,193,92,.75);
+
+    background:
+        rgba(39,10,27,.82);
+
+    color:#ffe5a0;
+
+    padding:13px 22px;
+
+    border-radius:50px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.3);
+
+    transition:.35s;
+}
+
+.music:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 35px rgba(255,190,73,.18);
+}
+
+.music.playing{
+    border-color:#ffd875;
+
+    box-shadow:
+        0 0 25px rgba(255,190,73,.18);
+}
+
+
+/* =========================================================
+   PARTICLES
+========================================================= */
+
+#particles{
+    position:fixed;
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:3;
+}
+
+.particle{
+    position:absolute;
+
+    color:#ffd66c;
+
+    opacity:.7;
+
+    animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+
+    from{
+        transform:
+            translateY(110vh)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:.75;
+    }
+
+    80%{
+        opacity:.75;
+    }
+
+    to{
+        transform:
+            translateY(-15vh)
+            rotate(360deg);
+
+        opacity:0;
+    }
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:
+        100px 20px
+        50px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:900px;
+
+    animation:
+        heroEnter 1.4s ease forwards;
+}
+
+@keyframes heroEnter{
+
+    from{
+        opacity:0;
+        transform:translateY(45px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   TOP LABEL
+========================================================= */
+
+.eyebrow{
+    color:#f5cb70;
+
+    font-size:11px;
+
+    letter-spacing:7px;
+
+    text-transform:uppercase;
+
+    font-weight:500;
+}
+
+
+/* =========================================================
+   RAKHI
+========================================================= */
+
+.rakhi{
+    width:165px;
+    height:165px;
+
+    margin:
+        35px auto
+        45px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    animation:
+        rakhiFloat 4s ease-in-out infinite;
+}
+
+.rakhi::before{
+    content:"";
+
+    position:absolute;
+
+    width:290px;
+    height:5px;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #b77a29,
+            #ffe69b,
+            #b77a29,
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px rgba(255,206,93,.18);
+}
+
+
+.rakhi-center{
+    width:125px;
+    height:125px;
+
+    border-radius:50%;
+
+    border:
+        7px solid #ffe9a4;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff1a9 0 8%,
+            #c21f5b 9% 20%,
+            #ffd65f 21% 29%,
+            #9f1548 30% 41%,
+            #ffd65f 42% 52%,
+            #b21a53 53% 67%,
+            #ffd875 68% 72%,
+            #9e1648 73%
+        );
+
+    box-shadow:
+        0 0 25px rgba(255,194,72,.5),
+        0 0 70px rgba(255,137,42,.13);
+
+    z-index:2;
+
+    position:relative;
+}
+
+.rakhi-center::after{
+    content:"✦";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    font-size:28px;
+
+    color:#fff2ba;
+
+    text-shadow:
+        0 0 15px #fff1a0;
+}
+
+
+@keyframes rakhiFloat{
+
+    0%,100%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50%{
+        transform:
+            translateY(-12px)
+            rotate(2deg);
+    }
+
+}
+
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.hero h1{
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(70px,10vw,125px);
+
+    line-height:.75;
+
+    font-weight:600;
+
+    color:#ffe6a2;
+
+    text-shadow:
+        0 5px 35px rgba(255,183,67,.1);
+}
+
+.hero h1 span{
+    display:block;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:.52em;
+
+    color:#ffd166;
+
+    margin-bottom:22px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider{
+    width:200px;
+
+    height:1px;
+
+    margin:38px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #e7b75d,
+            transparent
+        );
+
+    position:relative;
+}
+
+.divider::after{
+    content:"✦";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    color:#ffd66d;
+
+    font-size:13px;
+
+    background:#160916;
+
+    padding:0 10px;
+}
+
+
+/* =========================================================
+   HERO SUBTEXT
+========================================================= */
+
+.tagline{
+    color:#bfa6b1;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    font-weight:400;
+}
+
+.for{
+    margin-top:32px;
+
+    color:#d9c1ca;
+
+    font-size:14px;
+}
+
+.name{
+    margin-top:5px;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(55px,8vw,78px);
+
+    color:#ff6698;
+
+    text-shadow:
+        0 0 35px rgba(255,76,137,.13);
+}
+
+.relationship{
+    color:#f2cc72;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    margin-top:4px;
+}
+
+
+/* =========================================================
+   SCROLL
+========================================================= */
+
+.scroll{
+    margin-top:45px;
+
+    color:#927d89;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+}
+
+.mouse{
+    width:25px;
+    height:40px;
+
+    border:
+        1px solid #b98d45;
+
+    border-radius:20px;
+
+    margin:11px auto;
+
+    position:relative;
+}
+
+.mouse::after{
+    content:"";
+
+    position:absolute;
+
+    top:8px;
+    left:50%;
+
+    width:4px;
+    height:8px;
+
+    border-radius:5px;
+
+    background:#ffd56b;
+
+    transform:
+        translateX(-50%);
+
+    animation:
+        mouseMove 1.6s infinite;
+}
+
+@keyframes mouseMove{
+
+    to{
+        transform:
+            translate(-50%,15px);
+
+        opacity:0;
+    }
+
+}
+
+
+/* =========================================================
+   SURPRISE SECTION
+========================================================= */
+
+.surprise{
+    min-height:100vh;
+
+    padding:
+        130px 20px
+        120px;
+
+    text-align:center;
+
+    border-top:
+        1px solid rgba(255,208,102,.08);
+
+    position:relative;
+}
+
+
+.surprise::before{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    left:50%;
+    top:30%;
+
+    transform:
+        translate(-50%,-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(151,28,80,.16),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+.surprise h2{
+    position:relative;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(42px,6vw,65px);
+
+    font-weight:600;
+
+    color:#ffe3a0;
+}
+
+.surprise h2 span{
+    color:#ff6195;
+}
+
+.subtitle{
+    position:relative;
+
+    color:#a9919c;
+
+    font-size:13px;
+
+    margin-top:8px;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================================================
+   ENVELOPE
+========================================================= */
+
+.envelope-area{
+    width:min(550px,92vw);
+
+    height:310px;
+
+    margin:
+        75px auto
+        30px;
+
+    perspective:1200px;
+
+    cursor:pointer;
+
+    position:relative;
+}
+
+
+.envelope{
+    width:100%;
+    height:100%;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffe8d2,
+            #d99570
+        );
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.55),
+        0 0 50px rgba(255,183,64,.08);
+
+    transition:.5s;
+}
+
+
+.envelope:hover{
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 40px 100px rgba(0,0,0,.6),
+        0 0 60px rgba(255,183,64,.13);
+}
+
+
+.envelope::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent 49.5%,
+            rgba(152,79,61,.65) 50%,
+            transparent 50.5%
+        ),
+        linear-gradient(
+            45deg,
+            transparent 49.5%,
+            rgba(152,79,61,.65) 50%,
+            transparent 50.5%
+        );
+}
+
+
+.envelope::after{
+    content:"";
+
+    position:absolute;
+
+    inset:14px;
+
+    border:
+        1px solid rgba(255,238,210,.65);
+
+    border-radius:10px;
+
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   FLAP
+========================================================= */
+
+.flap{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:68%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff0df,
+            #dba07d
+        );
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            50% 100%
+        );
+
+    transform-origin:top;
+
+    transition:
+        transform 1s
+        cubic-bezier(.2,.8,.2,1);
+
+    z-index:5;
+
+    filter:
+        drop-shadow(
+            0 8px 8px rgba(80,25,20,.15)
+        );
+}
+
+
+.envelope.open .flap{
+    transform:
+        rotateX(180deg);
+}
+
+
+/* =========================================================
+   SEAL
+========================================================= */
+
+.seal{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ff4e83,
+            #971341
+        );
+
+    border:
+        3px solid rgba(255,219,126,.75);
+
+    color:white;
+
+    font-size:31px;
+
+    z-index:10;
+
+    box-shadow:
+        0 0 35px rgba(255,65,126,.3);
+
+    transition:
+        .5s;
+}
+
+.envelope.open .seal{
+    opacity:0;
+
+    transform:
+        translate(-50%,-50%)
+        scale(1.5)
+        rotate(15deg);
+}
+
+
+/* =========================================================
+   OPEN BUTTON
+========================================================= */
+
+.open{
+    position:relative;
+
+    padding:
+        16px 35px;
+
+    border-radius:50px;
+
+    border:
+        1px solid #dfb65b;
+
+    background:
+        linear-gradient(
+            135deg,
+            #75153e,
+            #c62561
+        );
+
+    color:#ffe9af;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 12px 35px rgba(191,35,91,.18);
+
+    transition:.35s;
+}
+
+.open:hover{
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 45px rgba(191,35,91,.28);
+}
+
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.letter-wrap{
+    max-width:920px;
+
+    margin:
+        80px auto
+        0;
+
+    opacity:0;
+
+    transform:
+        translateY(70px);
+
+    pointer-events:none;
+
+    transition:
+        1.2s
+        cubic-bezier(.2,.8,.2,1);
+}
+
+.letter-wrap.show{
+    opacity:1;
+
+    transform:
+        translateY(0);
+
+    pointer-events:auto;
+}
+
+
+.letter{
+    position:relative;
+
+    padding:
+        75px 55px;
+
+    border-radius:24px;
+
+    color:#58273a;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff4e5,
+            #f3d2a9
+        );
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.55);
+
+    overflow:hidden;
+}
+
+
+.letter::before{
+    content:"";
+
+    position:absolute;
+
+    inset:15px;
+
+    border:
+        1px solid rgba(183,124,64,.6);
+
+    border-radius:17px;
+
+    pointer-events:none;
+}
+
+
+.letter::after{
+    content:"✦  ❀  ✦";
+
+    position:absolute;
+
+    top:25px;
+    right:35px;
+
+    color:#d59b54;
+
+    font-size:14px;
+
+    opacity:.55;
+}
+
+
+/* =========================================================
+   LETTER TITLE
+========================================================= */
+
+.dear{
+    position:relative;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(45px,6vw,62px);
+
+    color:#ad2056;
+
+    z-index:2;
+}
+
+.letter-name{
+    color:#df2867;
+}
+
+
+/* =========================================================
+   LETTER TEXT
+========================================================= */
+
+.letter .divider{
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c99552,
+            transparent
+        );
+
+    margin:
+        35px auto
+        40px;
+}
+
+.letter .divider::after{
+    background:#fff0d8;
+
+    color:#c8914b;
+}
+
+
+.letter p{
+    position:relative;
+
+    max-width:720px;
+
+    margin:
+        24px auto;
+
+    color:#673347;
+
+    font-size:15px;
+
+    line-height:2.05;
+
+    z-index:2;
+}
+
+
+.letter p strong{
+    color:#a51d52;
+
+    font-weight:600;
+}
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.signature{
+    position:relative;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(38px,5vw,50px);
+
+    line-height:1.25;
+
+    color:#a51d52;
+
+    z-index:2;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.actions{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+}
+
+.action{
+    padding:
+        12px 23px;
+
+    border-radius:50px;
+
+    border:
+        1px solid #d5a251;
+
+    background:
+        rgba(102,21,57,.85);
+
+    color:#ffe6a2;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.action:hover{
+    transform:
+        translateY(-3px);
+
+    background:#7d1948;
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+.confetti{
+    position:fixed;
+
+    top:-30px;
+
+    z-index:2000;
+
+    pointer-events:none;
+
+    animation:
+        confettiFall 4.5s
+        linear forwards;
+}
+
+@keyframes confettiFall{
+
+    to{
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:0;
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    text-align:center;
+
+    padding:
+        35px 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,.05);
+
+    color:#806b76;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .music{
+        top:15px;
+        left:15px;
+
+        padding:
+            10px 15px;
+
+        font-size:11px;
+    }
+
+    .hero{
+        padding:
+            100px 18px
+            50px;
+    }
+
+    .eyebrow{
+        font-size:9px;
+
+        letter-spacing:4px;
+    }
+
+    .rakhi{
+        width:135px;
+        height:135px;
+
+        margin:
+            30px auto
+            38px;
+    }
+
+    .rakhi-center{
+        width:105px;
+        height:105px;
+    }
+
+    .rakhi::before{
+        width:220px;
+    }
+
+    .hero h1{
+        font-size:65px;
+    }
+
+    .name{
+        font-size:58px;
+    }
+
+    .tagline{
+        font-size:8px;
+
+        letter-spacing:2px;
+    }
+
+    .for{
+        font-size:12px;
+    }
+
+    .relationship{
+        font-size:9px;
+
+        letter-spacing:2px;
+    }
+
+    .surprise{
+        padding:
+            100px 18px;
+    }
+
+    .surprise h2{
+        font-size:41px;
+    }
+
+    .subtitle{
+        font-size:11px;
+    }
+
+    .envelope-area{
+        height:220px;
+
+        margin:
+            60px auto
+            25px;
+    }
+
+    .seal{
+        width:65px;
+        height:65px;
+
+        font-size:25px;
+    }
+
+    .letter{
+        padding:
+            60px 25px;
+    }
+
+    .letter::before{
+        inset:10px;
+    }
+
+    .letter p{
+        font-size:13px;
+
+        line-height:1.9;
+    }
+
+    .dear{
+        font-size:42px;
+    }
+
+    .signature{
+        font-size:36px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        scroll-behavior:auto !important;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     YOUR ACTUAL MUSIC
+     
+     Keep this MP3 in the same folder as index.html
+========================================================= -->
+
+<audio
+    id="bgMusic"
+    loop
+    preload="auto">
+
+    <source
+        src="./tunetank-indian-hindi-background-music-348349.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- BACKGROUND EFFECTS -->
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div id="particles"></div>
+
+
+<!-- =========================================================
+     MUSIC BUTTON
+========================================================= -->
+
+<button
+    class="music"
+    id="musicBtn">
+
+    🎵 Play Music
+
+</button>
+
+
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+
+<div class="eyebrow">
+    A Bond That Lasts Forever
+</div>
+
+
+<!-- RAKHI -->
+
+<div class="rakhi">
+
+    <div class="rakhi-center"></div>
+
+</div>
+
+
+<!-- TITLE -->
+
+<h1>
+
+    <span>Happy</span>
+
+    Raksha
+
+    <br>
+
+    Bandhan
+
+</h1>
+
+
+<div class="divider"></div>
+
+
+<div class="tagline">
+    A BOND THAT'S PURE • A LOVE THAT'S FOREVER
+</div>
+
+
+<div class="for">
+    To someone who makes my childhood memories beautiful ❤️
+</div>
+
+
+<div
+    class="name"
+    id="name">
+
+    My Beautiful Sister
+
+</div>
+
+
+<div
+    class="relationship"
+    id="relationship">
+
+    MY LOVELY SISTER
+
+</div>
+
+
+<div class="scroll">
+
+    Scroll Down
+
+    <div class="mouse"></div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     SURPRISE SECTION
+========================================================= -->
+
+<section class="surprise">
+
+
+<h2>
+
+    A Little
+
+    <span>Something</span>
+
+    From My Heart
+
+</h2>
+
+
+<p class="subtitle">
+
+    Because some feelings deserve more than just a message. ✨
+
+</p>
+
+
+<!-- ENVELOPE -->
+
+<div
+    class="envelope-area"
+    onclick="openLetter()">
+
+
+<div
+    class="envelope"
+    id="envelope">
+
+
+<div class="flap"></div>
+
+
+<div class="seal">
+    ❤️
+</div>
+
+
+</div>
+
+</div>
+
+
+<button
+    class="open"
+    onclick="openLetter()">
+
+    Open Your Surprise ✨
+
+</button>
+
+
+<!-- =========================================================
+     LETTER
+========================================================= -->
+
+<div
+    class="letter-wrap"
+    id="letterWrap">
+
+
+<div class="letter">
+
+
+<div class="dear">
+
+    Dear
+
+    <span
+        class="letter-name"
+        id="letterName">
+
+        Sister
+
+    </span>
+
+    ❤️
+
+</div>
+
+
+<div class="divider"></div>
+
+
+<p>
+
+    Some bonds are not meant to be explained,
+    they are simply meant to be cherished.
+    And the bond between a brother and sister
+    is one of the most beautiful gifts of life. ✨
+
+</p>
+
+
+<p>
+
+    हमारी नोक-झोंक, छोटी-छोटी लड़ाइयाँ,
+    साथ में हँसना और वो अनगिनत memories...
+    शायद मैं हर बार कह नहीं पाता,
+    लेकिन ये सब मेरी life का बहुत precious
+    हिस्सा हैं। ❤️
+
+</p>
+
+
+<p>
+
+    You have always been more than just my sister.
+    You are a beautiful part of my childhood,
+    my memories and my journey.
+    And no matter where life takes us,
+    this bond will always remain special. 🫶
+
+</p>
+
+
+<p>
+
+    On this Raksha Bandhan, I don't just wish you
+    happiness for today...
+    I wish you a life filled with dreams,
+    achievements, peace, endless smiles
+    and everything your heart truly deserves. ✨
+
+</p>
+
+
+<p id="specialMessage">
+
+    Keep smiling.
+    Keep shining.
+    And always remember —
+    your brother will always be cheering for you. ❤️
+
+</p>
+
+
+<div class="divider"></div>
+
+
+<div class="signature">
+
+    With Endless Love & Respect,
+
+    <br>
+
+    Your Brother ❤️
+
+</div>
+
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="actions">
+
+
+<button
+    class="action"
+    onclick="sharePage()">
+
+    🔗 Share This Surprise
+
+</button>
+
+
+<button
+    class="action"
+    onclick="whatsapp()">
+
+    💚 Send on WhatsApp
+
+</button>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    Made with ❤️ especially for my sisters
+
+    <br><br>
+
+    © Raksha Bandhan • A Brother's Little Surprise
+
+</footer>
+
+
+<script>
+
+
+/* =========================================================
+   SISTER DATA
+========================================================= */
+
+const sisters = {
+
+    Janvi:{
+
+        relationship:
+        "MY LOVELY ELDER SISTER",
+
+        message:
+        "Janvi, तुम्हारे साथ जुड़ी मेरी हर memory मेरे लिए priceless है। हमारी छोटी-छोटी बातें और moments हमेशा मेरे दिल के करीब रहेंगे। हमेशा खुश रहना और ऐसे ही shine करते रहना। ❤️"
+
+    },
+
+
+    Achal:{
+
+        relationship:
+        "MY LOVELY ELDER SISTER",
+
+        message:
+        "Achal, life चाहे हमें कितनी भी दूर ले जाए, हमारा bond हमेशा उतना ही special रहेगा। तुम्हारी happiness और success हमेशा मेरे लिए मायने रखेगी। हमेशा मुस्कुराती रहना। ❤️"
+
+    },
+
+
+    Shilpee:{
+
+        relationship:
+        "MY LOVELY ELDER SISTER",
+
+        message:
+        "Shilpee, हमारी नोक-झोंक, मस्ती और सारी memories मेरे लिए बहुत special हैं। शायद मैं हमेशा express नहीं करता, लेकिन तुम मेरी life का एक बहुत खूबसूरत हिस्सा हो। ✨❤️"
+
+    },
+
+
+    Beaut:{
+
+        relationship:
+        "MY LOVELY ELDER SISTER",
+
+        message:
+        "Beaut, तुम्हारे साथ बिताए हुए सारे crazy और beautiful moments हमेशा याद रहेंगे। तुम्हारी life में हमेशा happiness, peace और success बनी रहे। खूब आगे बढ़ना। ❤️✨"
+
+    },
+
+
+    Ekata:{
+
+        relationship:
+        "MY LOVELY ELDER SISTER",
+
+        message:
+        "Ekata, तुम्हारे लिए मेरी बस यही wish है कि तुम्हारी हर मेहनत success में बदले, हर dream पूरा हो और तुम्हारी smile हमेशा ऐसी ही बनी रहे। तुम हमेशा खुश रहो। ❤️"
+
+    },
+
+
+    Ananya:{
+
+        relationship:
+        "MY CUTE LITTLE SISTER 🧸",
+
+        message:
+        "Ananya, मेरी छोटी सी बहन, तुम्हारी smile हमेशा ऐसी ही प्यारी बनी रहे। खूब मस्ती करना, अपने dreams पूरे करना और हमेशा खुश रहना। तुम्हारा भाई हमेशा तुम्हारे साथ है। ❤️✨"
+
+    }
+
+};
+
+
+/* =========================================================
+   URL NAME SYSTEM
+========================================================= */
+
+const params =
+    new URLSearchParams(
+        window.location.search
+    );
+
+
+let sisterName =
+    params.get("name");
+
+
+if(!sisterName){
+
+    sisterName = "Sister";
+
+}
+
+
+try{
+
+    sisterName =
+        decodeURIComponent(
+            sisterName
+        );
+
+}catch(error){
+
+    console.log(error);
+
+}
+
+
+/* Find sister */
+
+let data =
+    sisters[sisterName];
+
+
+if(!data){
+
+    const key =
+        Object.keys(sisters)
+        .find(
+            name =>
+                name.toLowerCase() ===
+                sisterName.toLowerCase()
+        );
+
+
+    if(key){
+
+        sisterName = key;
+
+        data = sisters[key];
+
+    }
+
+}
+
+
+/* Default */
+
+if(!data){
+
+    data = {
+
+        relationship:
+        "MY BEAUTIFUL SISTER",
+
+        message:
+        "Wishing you a life filled with happiness, success, beautiful memories and endless smiles. ❤️"
+
+    };
+
+}
+
+
+/* =========================================================
+   INSERT NAME
+========================================================= */
+
+document
+    .getElementById("name")
+    .textContent =
+    sisterName;
+
+
+document
+    .getElementById("letterName")
+    .textContent =
+    sisterName;
+
+
+document
+    .getElementById("relationship")
+    .textContent =
+    data.relationship;
+
+
+document
+    .getElementById("specialMessage")
+    .textContent =
+    data.message;
+
+
+/* =========================================================
+   OPEN LETTER
+========================================================= */
+
+let opened = false;
+
+
+function openLetter(){
+
+    if(opened){
+
+        return;
+
+    }
+
+
+    opened = true;
+
+
+    const envelope =
+        document.getElementById(
+            "envelope"
+        );
+
+
+    const letter =
+        document.getElementById(
+            "letterWrap"
+        );
+
+
+    envelope.classList.add("open");
+
+
+    createConfetti();
+
+
+    /* Also start music if user opens envelope */
+
+    startMusic();
+
+
+    setTimeout(function(){
+
+        letter.classList.add("show");
+
+
+        setTimeout(function(){
+
+            letter.scrollIntoView({
+
+                behavior:"smooth",
+
+                block:"center"
+
+            });
+
+        },250);
+
+
+    },750);
+
+}
+
+
+/* =========================================================
+   FLOATING PARTICLES
+========================================================= */
+
+const particleBox =
+    document.getElementById(
+        "particles"
+    );
+
+
+const symbols = [
+
+    "✦",
+    "✧",
+    "♥",
+    "✿",
+    "❀",
+    "•"
+
+];
+
+
+function createParticle(){
+
+    const particle =
+        document.createElement(
+            "div"
+        );
+
+
+    particle.className =
+        "particle";
+
+
+    particle.textContent =
+        symbols[
+            Math.floor(
+                Math.random() *
+                symbols.length
+            )
+        ];
+
+
+    particle.style.left =
+        Math.random() * 100 +
+        "vw";
+
+
+    particle.style.fontSize =
+        8 +
+        Math.random() * 15 +
+        "px";
+
+
+    particle.style.animationDuration =
+        6 +
+        Math.random() * 8 +
+        "s";
+
+
+    particleBox.appendChild(
+        particle
+    );
+
+
+    setTimeout(function(){
+
+        particle.remove();
+
+    },16000);
+
+}
+
+
+setInterval(
+    createParticle,
+    350
+);
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+function createConfetti(){
+
+    const pieces = [
+
+        "♥",
+        "✦",
+        "✧",
+        "●",
+        "◆",
+        "✿"
+
+    ];
+
+
+    for(
+        let i = 0;
+        i < 130;
+        i++
+    ){
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.textContent =
+            pieces[
+                Math.floor(
+                    Math.random() *
+                    pieces.length
+                )
+            ];
+
+
+        confetti.style.left =
+            Math.random() * 100 +
+            "vw";
+
+
+        confetti.style.fontSize =
+            8 +
+            Math.random() * 15 +
+            "px";
+
+
+        confetti.style.animationDelay =
+            Math.random() * 1.5 +
+            "s";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(function(){
+
+            confetti.remove();
+
+        },5500);
+
+    }
+
+}
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+const music =
+    document.getElementById(
+        "bgMusic"
+    );
+
+
+const musicBtn =
+    document.getElementById(
+        "musicBtn"
+    );
+
+
+async function startMusic(){
+
+    try{
+
+        await music.play();
+
+
+        musicBtn.innerHTML =
+            "⏸ Pause Music";
+
+
+        musicBtn.classList.add(
+            "playing"
+        );
+
+    }
+
+    catch(error){
+
+        console.log(
+            "Music could not start:",
+            error
+        );
+
+    }
+
+}
+
+
+musicBtn.addEventListener(
+    "click",
+    async function(){
+
+        try{
+
+            if(music.paused){
+
+                await music.play();
+
+
+                musicBtn.innerHTML =
+                    "⏸ Pause Music";
+
+
+                musicBtn.classList.add(
+                    "playing"
+                );
+
+            }
+
+            else{
+
+                music.pause();
+
+
+                musicBtn.innerHTML =
+                    "🎵 Play Music";
+
+
+                musicBtn.classList.remove(
+                    "playing"
+                );
+
+            }
+
+        }
+
+        catch(error){
+
+            console.error(
+                "Audio Error:",
+                error
+            );
+
+
+            alert(
+                "Music load नहीं हुई। Check करो कि MP3 file index.html के साथ उसी folder में है।"
+            );
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   MUSIC ERROR CHECK
+========================================================= */
+
+music.addEventListener(
+    "error",
+    function(){
+
+        console.error(
+            "❌ Music file could not be loaded."
+        );
+
+    }
+);
+
+
+/* =========================================================
+   SHARE
+========================================================= */
+
+async function sharePage(){
+
+    const shareData = {
+
+        title:
+        "Happy Raksha Bandhan ❤️",
+
+        text:
+        `A special Raksha Bandhan surprise for ${sisterName} ❤️`,
+
+        url:
+        window.location.href
+
+    };
+
+
+    try{
+
+        if(
+            navigator.share
+        ){
+
+            await navigator.share(
+                shareData
+            );
+
+        }
+
+        else{
+
+            await navigator.clipboard.writeText(
+                window.location.href
+            );
+
+
+            alert(
+                "✨ Surprise link copied! अब अपनी sister को भेज दो ❤️"
+            );
+
+        }
+
+    }
+
+    catch(error){
+
+        console.log(
+            "Share cancelled."
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+function whatsapp(){
+
+    const text =
+
+`❤️ Happy Raksha Bandhan ${sisterName}! ❤️
+
+मैंने तुम्हारे लिए एक छोटा सा special surprise बनाया है। ✨
+
+Open it here 👇
+
+${window.location.href}`;
+
+
+    const url =
+        "https://wa.me/?text=" +
+        encodeURIComponent(
+            text
+        );
+
+
+    window.open(
+        url,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
